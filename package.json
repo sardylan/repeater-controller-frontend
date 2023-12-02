@@ -1,0 +1,27 @@
+{
+  "name": "repeater-controller-frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "3.3.9",
+    "bootstrap": "5.3.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "4.5.0",
+    "@popperjs/core": "2.11.8",
+    "eslint": "8.54.0",
+    "eslint-config-prettier": "9.0.0",
+    "eslint-plugin-prettier": "5.0.1",
+    "prettier": "3.1.0",
+    "sass": "1.69.5",
+    "typescript": "5.3.2",
+    "vite": "5.0.2",
+    "vue-tsc": "1.8.22"
+  }
+}
