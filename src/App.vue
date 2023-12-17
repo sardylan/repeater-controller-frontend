@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import SwitchBoard from "./components/SwitchBoard.vue";
-import status from "./status.ts";
+import { statusStore } from "./status.ts";
+
+const status = statusStore();
 </script>
 
 <template>
