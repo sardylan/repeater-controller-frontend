@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Switch from "./Switch.vue";
+import apiService from "../services/api.service.ts";
 
 const props = defineProps(["size", "titles", "enabled", "values"]);
 
@@ -12,6 +13,8 @@ function toggleButton(num: number) {
   const oldValue: boolean = props.values[num];
   const newValue: boolean = !oldValue;
   console.log(`Toggling button ${num} - OLD: ${oldValue} - NEW: ${newValue}`);
+
+  apiService.setRelay(num, newValue);
 
   props.enabled[num] = false;
 
